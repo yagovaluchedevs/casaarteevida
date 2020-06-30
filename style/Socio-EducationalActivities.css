@@ -1,0 +1,108 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../font/CaviarDreams.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    
+    font-family: CaviarDreams;
+}
+
+header {
+    height: 100px;
+}
+
+header div {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.logo-image {
+    width: 100px;
+    height: 60px;
+}
+
+.home-paragraph {
+    max-width: 750px;  
+}
+
+.home-text-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-text-img img {
+    height: 150px;
+    width: 250px;
+}
+
+.about {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: #990099;
+    color: #FFF;
+}
+
+/*=============[ Carrousel ]=============*/
+
+.collaborators {
+    height: 100px;
+    margin-top: 50px;
+}
+
+.collaborators img {
+    width: 120px;
+    height: 120px;
+}
+
+.carrousel-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    color: #990099;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    display: flex;
+    align-self: center;
+}
+
+.prev:hover, .next:hover { font-size: 40px; }
+
+@media (max-width:640px)
+{
+
+    .home-text-img1 {
+        margin: 0 auto;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    
+    .home-text-img2 { display: none; }
+
+    .carrousel {
+        margin-top: -50px;
+    }
+    .prev, .next {
+        display: flex;
+        align-self: flex-start;
+    }
+}
+
+

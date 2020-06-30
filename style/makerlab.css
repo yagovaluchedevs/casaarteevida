@@ -1,0 +1,116 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../font/CaviarDreams.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: CaviarDreams;
+}
+
+header {
+    background-color: white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-logo {
+    width: 200px;
+    height: 150px;
+    margin-top: 17px;
+}
+
+.home-text-obj {
+    max-width: 750px;  
+}
+
+.about {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background: #990099;
+    color: #FFF;
+}
+
+section img{
+    width: 250px;
+    height: 180px;
+    margin-right: 15px;
+}
+
+@media (max-width:640px)
+{
+    .about {
+    height: auto;
+    }
+
+    .home-text-img {
+    margin-top: 80px;
+    }
+
+    .home-text-img img {
+    border-radius: 10px;
+    }
+
+    .carrousel {
+        margin-top: -50px;
+    }
+
+
+}
+
+/*=============[ Carrousel ]=============*/
+
+.collaborators {
+    height: 100px;
+    margin-top: 50px;
+}
+
+.collaborators img {
+    width: 120px;
+    height: 120px;
+}
+
+.carrousel-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    color: #990099;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    display: flex;
+    align-self: center;
+}
+
+.prev:hover, .next:hover { font-size: 35px; }
+
+@media (max-width:640px)
+{
+    .home-text-img1 {
+        margin: 0 auto;
+    }
+    .home-text-img2, .home-text-img3
+    {
+        display: none;
+    }
+    .prev, .next {
+       display: flex;
+       align-self: flex-start;
+    }
+   
+}

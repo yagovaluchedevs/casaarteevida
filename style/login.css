@@ -1,0 +1,62 @@
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../font/CaviarDreams.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    
+    font-family: CaviarDreams;
+}
+
+main {
+
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-main {
+    width: 200px;
+}
+
+.name {
+    margin-top: 20px;
+    height: 25px;    
+}
+
+.button {
+    width: 80px;
+    height: 25px;
+}
+
+footer {
+    color: #272727;
+    height: 100px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #272727;
+}
